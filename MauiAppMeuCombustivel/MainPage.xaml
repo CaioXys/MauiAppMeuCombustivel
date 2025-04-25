@@ -8,16 +8,23 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                Source="carro_posto.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="Um carro no posto de gasolina" />
 
+            <Label Text="Marca do veículo: " />
+            <Entry x:Name="txt_marca" Placeholder="Insira aqui " />
+
+            <Label Text="Modelo do veículo: " />
+            <Entry x:Name="txt_modelo" Placeholder="Insira aqui " />
+            
             <Label Text="Preço do Etanol: " />
             <Entry x:Name="txt_etanol" Placeholder="R$ " />
 
             <Label Text="Preço da Gasolina: " />
             <Entry x:Name="txt_gasolina" Placeholder="R$ "/>
+
 
             <Button Text="Qual compensa mais?" Clicked="Button_Clicked" />
 
